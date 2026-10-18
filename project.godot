@@ -11,7 +11,7 @@ config_version=5
 [application]
 
 config/name="Worst Game"
-run/main_scene="uid://beigm6cftp4sx"
+run/main_scene="uid://bcoth0f3k8hj4"
 config/features=PackedStringArray("4.7", "4.7.2", "GL Compatibility")
 config/icon="res://icon.svg"
 <<<<<<<HEADrun/main_scene="uid://beigm6cftp4sx"
@@ -21,8 +21,8 @@ config/icon="res://icon.svg"
 folder_colors={
 "res://Assets/": "red",
 "res://Entities/": "yellow",
+"res://Game/": "purple",
 "res://Map/": "pink",
-"res://Scenes/": "orange",
 "res://Sounds/": "green"
 }
 
