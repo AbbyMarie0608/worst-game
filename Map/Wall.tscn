@@ -1,7 +1,13 @@
 [gd_scene format=3 uid="uid://c4w4a16rvet6x"]
 
+[ext_resource type="Texture2D" uid="uid://dt6rf1yt73iye" path="res://Assets/Walls/missing-wall.png" id="1_c23k3"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_jwy2u"]
+albedo_texture = ExtResource("1_c23k3")
+
 [node name="Wall" type="Node3D" unique_id=1829102282]
 
 [node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=1390102080]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, -0.4)
 size = Vector3(1, 1, 0.2)
+material = SubResource("StandardMaterial3D_jwy2u")
