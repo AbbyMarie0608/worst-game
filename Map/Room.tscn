@@ -1,23 +1,31 @@
 [gd_scene format=3 uid="uid://beigm6cftp4sx"]
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_22oao"]
+size = Vector3(16.5, 17.6, 1)
+
 [node name="Room" type="Node3D" unique_id=286830524]
 
 [node name="Floor" type="CSGBox3D" parent="." unique_id=1253721846]
-transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, -5.9604645e-08, 0.25, 0.04999993)
-size = Vector3(17.300001, 18.4, 0.1)
+transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.049999177, 0.25, 0.04999993)
+size = Vector3(17.4, 18.4, 0.1)
+
+[node name="Area3D" type="Area3D" parent="Floor" unique_id=1601913369]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor/Area3D" unique_id=1683518151]
+shape = SubResource("BoxShape3D_22oao")
 
 [node name="Wall1" type="CSGBox3D" parent="." unique_id=668802404]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09999938, 1.5000001, -9.15)
-size = Vector3(17.5, 2.4, 0.1)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09999938, 4.05, -9.15)
+size = Vector3(17.5, 7.5, 0.1)
 
 [node name="Wall2" type="CSGBox3D" parent="." unique_id=1928089048]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.050000146, 1.5, 9.25)
-size = Vector3(17.6, 2.4, 0.1)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.050000146, 4.05, 9.25)
+size = Vector3(17.56, 7.5, 0.1)
 
 [node name="Wall3" type="CSGBox3D" parent="." unique_id=1640707355]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -8.65, 1.5, 0.050000094)
-size = Vector3(18.5, 2.4, 0.1)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -8.55, 4.05, 0.05000009)
+size = Vector3(18.5, 7.5, 0.3)
 
 [node name="Wall4" type="CSGBox3D" parent="." unique_id=626538990]
-transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 8.75, 1.5, 0.050000094)
-size = Vector3(18.300001, 2.4, 0.1)
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 8.75, 4.05, 0.050000094)
+size = Vector3(18.300001, 7.5, 0.1)
