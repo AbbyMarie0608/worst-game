@@ -1,18 +1,10 @@
 [gd_scene format=3 uid="uid://beigm6cftp4sx"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_22oao"]
-size = Vector3(16.5, 17.6, 1)
-
 [node name="Room" type="Node3D" unique_id=286830524]
 
 [node name="Floor" type="CSGBox3D" parent="." unique_id=1253721846]
 transform = Transform3D(1, 0, 0, 0, -4.371139e-08, -1, 0, 1, -4.371139e-08, 0.049999177, 0.25, 0.04999993)
 size = Vector3(17.4, 18.4, 0.1)
-
-[node name="Area3D" type="Area3D" parent="Floor" unique_id=1601913369]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor/Area3D" unique_id=1683518151]
-shape = SubResource("BoxShape3D_22oao")
 
 [node name="Wall1" type="CSGBox3D" parent="." unique_id=668802404]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.09999938, 4.05, -9.15)
