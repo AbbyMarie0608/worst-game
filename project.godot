@@ -14,6 +14,15 @@ config/name="Worst Game"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[file_customization]
+
+folder_colors={
+"res://Assets/": "red",
+"res://Scenes/": "orange",
+"res://Scripts/": "yellow",
+"res://Sounds/": "green"
+}
+
 [physics]
 
 3d/physics_engine="Jolt Physics"
