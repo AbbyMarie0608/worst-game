@@ -14,6 +14,7 @@ config/name="Worst Game"
 run/main_scene="uid://bbpgapygud220"
 config/features=PackedStringArray("4.7", "4.7.2", "GL Compatibility")
 config/icon="res://icon.svg"
+<<<<<<<HEADrun/main_scene="uid://beigm6cftp4sx"
 
 [file_customization]
 
