@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://ce5x48mp0mvos"]
+
+[node name="Table" type="Node3D" unique_id=1500154461]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=201915637]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.55, 0)
+size = Vector3(2, 0.1, 1)
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="CSGBox3D" unique_id=2027498839]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.3, 0)
+radius = 0.2
