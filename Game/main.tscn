@@ -8,3 +8,4 @@
 [node name="Room" parent="." unique_id=286830524 instance=ExtResource("1_f5lw1")]
 
 [node name="Player" parent="." unique_id=748871702 instance=ExtResource("2_gab3r")]
+transform = Transform3D(1, 0, 0, 0, 0.9976136, 0.06904412, 0, -0.06904412, 0.9976136, 1.6224263, 6.6234407, 5.854105)
