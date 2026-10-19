@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dtfqg2lcxfvku"]
+
+[ext_resource type="PackedScene" uid="uid://cwi8ghixbjj35" path="res://Map/Room.tscn" id="1_vlvrd"]
+
+[node name="Parkour" type="Node3D" unique_id=1613063417]
+
+[node name="Room" parent="." unique_id=286830524 instance=ExtResource("1_vlvrd")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7, -0.3, 1)

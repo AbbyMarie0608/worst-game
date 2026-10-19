@@ -1,5 +1,10 @@
 [gd_scene format=3 uid="uid://vsq2g371iaq5"]
 
+[ext_resource type="Texture2D" uid="uid://boggnmpmgodwu" path="res://Assets/Walls/potion-juice.png" id="1_l4gy6"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ijrtb"]
+albedo_texture = ExtResource("1_l4gy6")
+
 [sub_resource type="ORMMaterial3D" id="ORMMaterial3D_kj85v"]
 
 [node name="Cauldron" type="Node3D" unique_id=1659207970]
@@ -17,10 +22,11 @@ radius = 0.4
 rings = 8
 smooth_faces = false
 
-[node name="CSGCylinder3D" type="CSGCylinder3D" parent="CSGSphere3D" unique_id=773400600]
-transform = Transform3D(1, 0, 0, 0, 0.3, 0, 0, 0, 1, 0, 0, 0)
-
 [node name="CSGSphere3D2" type="CSGSphere3D" parent="." unique_id=428920963]
 transform = Transform3D(4.99125, 0, 0, 0, 0.7260001, 0, 0, 0, 5.28, 0, 0.29999986, 0.20000005)
+material_override = SubResource("StandardMaterial3D_ijrtb")
 radius = 0.4
 material = SubResource("ORMMaterial3D_kj85v")
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="CSGSphere3D2" unique_id=773400600]
+transform = Transform3D(0.33057854, 0, 0, 0, 0.6818181, 0, 0, 0, 0.3125, 0, 1.1019285, 0)

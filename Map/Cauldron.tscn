@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://cgdsrq2df8ra0"]
 
-[ext_resource type="PackedScene" uid="uid://beigm6cftp4sx" path="res://Map/Room.tscn" id="1_lb5dh"]
+[ext_resource type="PackedScene" uid="uid://cwi8ghixbjj35" path="res://Map/Room.tscn" id="1_lb5dh"]
 [ext_resource type="PackedScene" uid="uid://vsq2g371iaq5" path="res://Assets/Decors/Cauldron.tscn" id="2_g7y6o"]
 [ext_resource type="PackedScene" uid="uid://ce5x48mp0mvos" path="res://Assets/Decors/Table.tscn" id="3_bgd5y"]
 
