@@ -6,6 +6,7 @@
 
 [node name="CSGSphere3D" type="CSGSphere3D" parent="." unique_id=1000568806]
 transform = Transform3D(1.6500001, 0, 0, 0, 1.6500001, 0, 0, 0, 1.6500001, 0, 1.1, 0.20000005)
+use_collision = true
 radius = 0.6
 rings = 8
 
