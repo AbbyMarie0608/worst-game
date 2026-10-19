@@ -5,4 +5,4 @@
 [node name="Parkour" type="Node3D" unique_id=1613063417]
 
 [node name="Room" parent="." unique_id=286830524 instance=ExtResource("1_vlvrd")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.7, -0.3, 1)
+transform = Transform3D(1.6456062, 0, 0, 0, 1, 0, 0, 0, 2.7979665, 0.7, -0.3, 1)

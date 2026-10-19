@@ -1,6 +1,10 @@
 [gd_scene format=3 uid="uid://vsq2g371iaq5"]
 
+[ext_resource type="Texture2D" uid="uid://bebl874h7h7po" path="res://Assets/Walls/cauldron.png" id="1_ijrtb"]
 [ext_resource type="Texture2D" uid="uid://boggnmpmgodwu" path="res://Assets/Walls/potion-juice.png" id="1_l4gy6"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_mqm15"]
+albedo_texture = ExtResource("1_ijrtb")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ijrtb"]
 albedo_texture = ExtResource("1_l4gy6")
@@ -11,6 +15,7 @@ albedo_texture = ExtResource("1_l4gy6")
 
 [node name="CSGSphere3D" type="CSGSphere3D" parent="." unique_id=1000568806]
 transform = Transform3D(1.6500001, 0, 0, 0, 1.6500001, 0, 0, 0, 1.6500001, 0, 1.1, 0.20000005)
+material_override = SubResource("StandardMaterial3D_mqm15")
 use_collision = true
 radius = 0.6
 rings = 8
