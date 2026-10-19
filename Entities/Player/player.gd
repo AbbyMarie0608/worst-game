@@ -1,11 +1,16 @@
 extends CharacterBody3D
 
+@export var mouse_sensitivity: float = 0.001
+@onready var eye_camera: Camera3D = $EyeCamera
 
 const SPEED = 5.0
 const JUMP_VELOCITY = 4.5
 
+func _ready() -> void:
+	Input.mouse_mode = Input.MOUSE_MODE_CAPTURED
 
 func _physics_process(delta: float) -> void:
+	
 	# Add the gravity.
 	if not is_on_floor():
 		velocity += get_gravity() * delta
@@ -26,3 +31,10 @@ func _physics_process(delta: float) -> void:
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 
 	move_and_slide()
+	
+func _unhandled_input(event: InputEvent) -> void:
+	if event is InputEventMouseMotion:
+		var relative: Vector2 = event.relative * mouse_sensitivity
+		rotate_y(-relative.x)  # yaw on the body, not the camera
+		eye_camera.rotate_x(-relative.y)
+		eye_camera.rotation.x = clampf(eye_camera.rotation.x, -PI / 2.0, PI / 2.0)

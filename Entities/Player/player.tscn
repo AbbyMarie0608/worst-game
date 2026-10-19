@@ -17,3 +17,5 @@ mesh = SubResource("CapsuleMesh_68faa")
 
 [node name="EyeCamera" type="Camera3D" parent="." unique_id=1553082440]
 current = true
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." unique_id=1857651211]
