@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://vsq2g371iaq5"]
+
+[sub_resource type="ORMMaterial3D" id="ORMMaterial3D_kj85v"]
+
+[node name="Cauldron" type="Node3D" unique_id=1659207970]
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="." unique_id=1000568806]
+transform = Transform3D(1.6500001, 0, 0, 0, 1.6500001, 0, 0, 0, 1.6500001, 0, 1.1, 0.20000005)
+radius = 0.6
+rings = 8
+
+[node name="CSGSphere3D" type="CSGSphere3D" parent="CSGSphere3D" unique_id=998536829]
+transform = Transform3D(1.2, 0, 0, 0, 1.4299998, 0, 0, 0, 1.2, 2.2351742e-08, 0.20000029, 1.1920929e-07)
+operation = 2
+radius = 0.4
+rings = 8
+smooth_faces = false
+
+[node name="CSGCylinder3D" type="CSGCylinder3D" parent="CSGSphere3D" unique_id=773400600]
+transform = Transform3D(1, 0, 0, 0, 0.3, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="CSGSphere3D2" type="CSGSphere3D" parent="." unique_id=428920963]
+transform = Transform3D(4.99125, 0, 0, 0, 0.7260001, 0, 0, 0, 5.28, 0, 0.29999986, 0.20000005)
+radius = 0.4
+material = SubResource("ORMMaterial3D_kj85v")
